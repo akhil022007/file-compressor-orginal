@@ -4,8 +4,11 @@ When dealing with large files, such as a 200MB document, transferring them can o
 this application addresses that challenge by allowing users to compress these large files, potentially reducing a 200MB file to a more manageable size like 100MB or even 150MB. This reduction in file size directly translates to faster upload/download times and more efficient use of network bandwidth, making data transfers smoother and quicker.
 
 To achieve this, the application leverages two distinct compression algorithms:
+
 Run-Length Encoding (RLE): Ideal for data with repetitive sequences, offering simple yet effective lossless compression.
+
 LZ77: A more advanced, highly efficient lossless compression algorithm, widely used in common file formats, ensuring significant size reduction without any data loss.
+
 By providing these robust compression capabilities, the File Compressor aims to streamline the process of moving data, making it more efficient and practical for everyday use.
 
 KEY FEATURES OF THE WEBSITE:
