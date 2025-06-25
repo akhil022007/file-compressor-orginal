@@ -130,7 +130,7 @@ const App = () => {
       formData.append('originalSize', fileSize);      
 
       
-      const response = await fetch('http://localhost:5000/api/process-file', {
+      const response = await fetch('https://file-compressor-orginal-1.onrender.com', {
         method: 'POST', 
         body: formData, 
       });

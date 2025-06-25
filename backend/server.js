@@ -7,7 +7,9 @@ const zlib = require('zlib');
 const app = express();
 const port = 5000;
 
-app.use(cors());
+app.use(cors({
+    origin :'https://685b7d133a0d736a9ed474d7--genuine-squirrel-77a48b.netlify.app/'
+}));
 app.use(express.json());
 
 const storage = multer.memoryStorage();
