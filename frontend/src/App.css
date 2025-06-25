@@ -1,0 +1,354 @@
+/* General Container Styling */
+.app-container-outer {
+    /* Ensures the main container fills the viewport and allows inner scrolling */
+    min-height: 100vh; /* Minimum height is 100% of viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #e0f7fa, #bbdefb); /* Light blue gradient background */
+    padding: 20px; /* Add some padding around the edges */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+}
+
+.app-container {
+    background-color: #ffffff; /* White background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    padding: 40px;
+    width: 100%;
+    max-width: 960px; /* Max width for larger screens */
+    border: 1px solid #c0d8e7; /* Light blue border */
+    display: flex; /* Use flexbox for inner layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 30px; /* Space between sections */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Headings */
+.main-heading {
+    font-size: 2.5em; /* Larger font size */
+    font-weight: bold;
+    text-align: center;
+    color: #1a237e; /* Dark blue color */
+    margin-bottom: 0; /* Removed bottom margin as gap handles spacing */
+    letter-spacing: -0.5px;
+}
+
+.section-heading {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #283593; /* Medium blue */
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+.app-section {
+    padding: 30px;
+    background-color: #f8faff; /* Very light blue background */
+    border-radius: 10px;
+    border: 1px solid #dbe2ed; /* Light grey-blue border */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05); /* Inner shadow */
+}
+
+/* Specific styling for the Upload Section */
+.app-section.upload-section-red {
+    background-color: #ffebee; /* Very light red */
+    border-color: #ef9a9a; /* Light red border */
+}
+
+/* Algorithm Descriptions (details/summary) */
+.algorithm-details summary {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #3f51b5; /* Blue */
+    cursor: pointer;
+    padding: 10px 0;
+    transition: color 0.2s ease-in-out;
+}
+.algorithm-details summary:hover {
+    color: #1a237e; /* Darker blue on hover */
+}
+.algorithm-details p {
+    margin-top: 10px;
+    color: #555555;
+    line-height: 1.6;
+    padding-left: 15px;
+    border-left: 4px solid #9fa8da; /* Purple-blue border */
+    margin-left: 5px;
+}
+
+/* File Upload Area */
+.drop-zone {
+    border: 2px dashed #90a4ae; /* Grey blue dashed border */
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.drop-zone:hover {
+    border-color: #5c6bc0; /* Darker blue on hover */
+    background-color: #e8eaf6; /* Lighter blue background on hover */
+}
+.drop-zone p {
+    color: #616161;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.browse-button {
+    background: linear-gradient(to right, #42a5f5, #2196f3); /* Blue gradient */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+.browse-button:hover {
+    background: linear-gradient(to right, #2196f3, #1976d2); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Slight lift */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+.browse-button:active {
+    transform: translateY(0); /* Press effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.file-info {
+    margin-top: 20px;
+    text-align: center;
+    color: #424242;
+    font-size: 1.1em;
+}
+.file-info span {
+    font-weight: 600;
+    color: #283593;
+}
+
+/* File Preview Area */
+.file-preview-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #bbdefb;
+    border-radius: 8px;
+    background-color: #e3f2fd;
+    text-align: center;
+    max-height: 200px; /* Limit height for preview */
+    overflow-y: auto; /* Add scroll if content overflows */
+    white-space: pre-wrap; /* Preserve whitespace and wrap text */
+    word-break: break-all; /* Break long words */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for text content */
+    color: #333;
+    font-size: 0.9em;
+}
+
+.file-preview-image {
+    max-width: 100%;
+    max-height: 180px; /* Max height for images */
+    object-fit: contain; /* Keep aspect ratio */
+    border-radius: 5px;
+}
+
+
+/* Radio Button Styling (Algorithm and Operation) */
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.radio-label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.radio-label input[type="radio"] {
+    /* Hide default radio button */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9e9e9e; /* Grey border */
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s ease-in-out;
+}
+.radio-label input[type="radio"]:checked {
+    border-color: #3f51b5; /* Blue when checked */
+}
+.radio-label input[type="radio"]:checked::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #3f51b5; /* Blue inner circle */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.radio-label span {
+    font-size: 1.1em;
+    color: #424242;
+}
+
+/* Specific colors for operation radio buttons */
+.radio-label.compress input[type="radio"]:checked { border-color: #4caf50; }
+.radio-label.compress input[type="radio"]:checked::before { background-color: #4caf50; }
+.radio-label.decompress input[type="radio"]:checked { border-color: #f44336; }
+.radio-label.decompress input[type="radio"]:checked::before { background-color: #f44336; }
+
+
+/* Process Button */
+.process-button {
+    padding: 15px 35px;
+    background: linear-gradient(to right, #673ab7, #5e35b1); /* Purple gradient */
+    color: white;
+    font-size: 1.4em;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: block; /* Make it block level to center easily */
+    margin: 0 auto; /* Center the button */
+}
+.process-button:hover:not(:disabled) {
+    background: linear-gradient(to right, #512da8, #4527a0); /* Darker purple on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.process-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Message Display Area */
+.message-box {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1em;
+    border: 1px solid; /* General border for messages */
+}
+.message-box.success {
+    background-color: #e8f5e9; /* Light green */
+    color: #2e7d32; /* Dark green */
+    border-color: #a5d6a7;
+}
+.message-box.error {
+    background-color: #ffebee; /* Light red */
+    color: #c62828; /* Dark red */
+    border-color: #ef9a9a;
+}
+.message-box.info {
+    background-color: #e3f2fd; /* Light blue */
+    color: #1565c0; /* Dark blue */
+    border-color: #90caf9;
+}
+
+/* Results Display Section */
+.results-section {
+    padding: 30px;
+    background-color: #fffde7; /* Light yellow */
+    border-radius: 10px;
+    border: 1px solid #ffeb3b; /* Yellow border */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.results-section h2 {
+    color: #ff8f00; /* Orange-yellow */
+    text-align: center;
+}
+.results-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 25px;
+}
+@media (min-width: 640px) { /* For small screens and up */
+    .results-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+    }
+}
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff9c4; /* Lighter yellow */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.result-item span:first-child {
+    font-weight: 600;
+    color: #ffb300; /* Darker orange-yellow */
+}
+.result-item span:last-child {
+    color: #e65100; /* Even darker orange-yellow */
+}
+
+.download-button {
+    margin-top: 40px;
+    padding: 15px 35px;
+    background: linear-gradient(to right, #4caf50, #388e3c); /* Green gradient */
+    color: white;
+    font-size: 1.4em;
+    font-weight: 700;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: block; /* Make it block level to center easily */
+    margin: 40px auto 0; /* Center the button and add top margin */
+}
+.download-button:hover:not(:disabled) {
+    background: linear-gradient(to right, #388e3c, #2e7d32); /* Darker green on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.download-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 640px) {
+    .app-container {
+        padding: 20px;
+    }
+    .main-heading {
+        font-size: 2em;
+    }
+    .section-heading {
+        font-size: 1.5em;
+    }
+    .app-section {
+        padding: 20px;
+    }
+    .drop-zone {
+        padding: 30px;
+    }
+    .browse-button, .process-button, .download-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    .radio-group {
+        flex-direction: column;
+        align-items: center;
+    }
+}
