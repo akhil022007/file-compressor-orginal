@@ -72,7 +72,6 @@ DEPLOYED DEMO LINK------------------->     https://685b7d133a0d736a9ed474d7--gen
 
 SCREENRECORDED VIDEO WHILE RUNNING IN LOCAL ----------------->  https://drive.google.com/file/d/1Q4RC2VRjtYXOmfLvEps7_4kqUZMq_Tln/view?usp=drivesdk
 
-5.
 
 
 
