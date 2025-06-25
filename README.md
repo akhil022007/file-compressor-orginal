@@ -10,11 +10,16 @@ By providing these robust compression capabilities, the File Compressor aims to 
 
 KEY FEATURES OF THE WEBSITE:
 
-1.Efficient Data Transfer:data can be trasfered effiently
-2.Dual Operation Modes:it can compress and decompress the file
-3.Multiple Compression Algorithms:we can choose the algorithm to compress or decompress
-4.easy to handle:we can simply choose the file and read the decreption provided for algorithm and choose one
+1.Efficient Data Transfer:data can be trasfered effiently.
+
+2.Dual Operation Modes:it can compress and decompress the file.
+
+3.Multiple Compression Algorithms:we can choose the algorithm to compress or decompress.
+
+4.easy to handle:we can simply choose the file and read the decreption provided for algorithm and choose one.
+
 5.Processing Status & Results:we can see original size,compressed size,compression ratio,processing time.
-6.downloading feature:we can download the compressed or decompressed file
+
+6.downloading feature:we can download the compressed or decompressed file.
 
 
